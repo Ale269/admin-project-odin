@@ -15,6 +15,11 @@ i {
     cursor: pointer;
 }
 
+i:hover {
+    color: var(--action-color);
+    transition: ease-in-out 0.2s;
+}
+
 .main-container {
     display: grid;
     grid-template: repeat(5, 1fr) / repeat(5, 1fr);
@@ -32,6 +37,7 @@ nav {
     height: 100%;
     background-color: var(--action-color);
     border-radius: 10px;
+    box-shadow: 5px 5px 10px #A7A7A7;
 }
 
 ul {
@@ -68,6 +74,7 @@ li:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    box-shadow: 5px 5px 10px #A7A7A7;
 }
 
 label {
@@ -78,7 +85,7 @@ label {
 
 input {
     font-size: 1.2rem;
-    width: 300px;
+    width: 500px;
     border-radius: 10px;
     padding: 0.2rem;
     outline: none;
@@ -96,6 +103,11 @@ input {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.search-right img {
+    width: 50px;
+    margin-right: 20px;
 }
 
 .search-right .fa-solid,h3 {
@@ -116,6 +128,11 @@ input {
 .btn-row-left {
     display: flex;
     align-items: center;
+}
+
+.btn-row-left img {
+    width: 80px;
+    margin-right: 20px;
 }
 
 button {
@@ -162,7 +179,34 @@ button:last-of-type {
     background-color: var(--secondary-color);
     border-radius: 20px;
     border-left: 8px solid var(--action-color);
+    box-shadow: 5px 5px 10px #A7A7A7;
+    display:flex;
+    padding: 40px 20px;
+    justify-content: space-between;
+    flex-direction: column;
+}
 
+.content-card-element h4 {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.content-card-element p {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.icon-element {
+    display: flex;
+    justify-content: end;
+}
+
+.icon-element i {
+    margin-right: 20px;
+}
+
+.icon-element i:last-of-type {
+    margin-right: 0;
 }
 
 .trending {
@@ -180,9 +224,12 @@ button:last-of-type {
 .trending-element-card {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
     width: 100%;
     border-radius: 20px;
     background-color: var(--secondary-color);
+    box-shadow: 5px 5px 10px #A7A7A7;
 }
 
 .announcement-element-card {
@@ -191,4 +238,56 @@ button:last-of-type {
     width: 100%;
     border-radius: 20px;
     background-color: var(--secondary-color);
+    box-shadow: 5px 5px 10px #A7A7A7;
+}
+
+.announcement-element-card {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.announcement-block-element {
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.announcement-block-element h4 {
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.announcement-block-element p {
+    margin-bottom: 10px;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.announcement-block-element:last-of-type {
+    border-bottom: none;
+}
+
+.trening-element-block {
+    height: 25%;
+    display: flex;
+    align-items: center;
+}
+
+.trening-element-block img {
+    width: 50px;
+}
+
+.trending-element-text {
+    margin: auto 0px auto 20px;
+}
+
+.trening-element-block h3 {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.trening-element-block p {
+    font-weight: 300;
+    font-size: 1rem;
 }
